@@ -2,9 +2,6 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="coffeeshop.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -33,31 +30,33 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-container">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-container fixed-top">
         <a class="navbar-brand" href="#"><img src="https://i.pinimg.com/564x/8f/f4/12/8ff41290a63c1d2a5c14c521fe2f00f6.jpg" class="image-logo" /></a>
-        <button class="navbar-toggler bg-white navbar-bg-1" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-white navbar-bg" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav m-auto">
-                <a class="nav-item nav-link active text-white" href="#">HOME <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link text-white" href="#">ABOUT</a>
-                <a class="nav-item nav-link text-white" href="#">BLOG</a>
-                <a class="nav-item nav-link text-white" href="#">MENU</a>
-                <a class="nav-item nav-link text-white" href="#">TEAM</a>
-                <a class="nav-item nav-link text-white" href="#">CONTACT</a>
+                <a class="nav-item nav-link active text-white" href="#homesection">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link text-white" href="#aboutsection">ABOUT</a>
+                <a class="nav-item nav-link text-white" href="#blogsection">BLOG</a>
+                <a class="nav-item nav-link text-white" href="#menusection">MENU</a>
+                <a class="nav-item nav-link text-white" href="#teamsection">TEAM</a>
+                <a class="nav-item nav-link text-white" href="#reservationsection">RESERVASION</a>
+                <a class="nav-item nav-link text-white" href="#testimonialsection">TESTIMONIALS</a>
+                <a class="nav-item nav-link text-white" href="#contactsection">CONTACT</a>
             </div>
         </div>
 
     </nav>
-    <div class="bg-container d-flex flex-column justify-content-center">
+    <div class="bg-container d-flex flex-column justify-content-center" id="homesection">
         <div class="pl-4">
             <p class="coffee-heading">Now You Can Feel The Energy</p>
             <p class="coffee-heading-1">Start Your Day With <br />A Coffee</p>
             <button class="btn btn-outline-danger pl-3 pr-3">Buy Now</button>
         </div>
     </div>
-    <div class="second-section-container d-flex flex-row justify-content-center pt-5 pb-5 text-center">
+    <div id="aboutsection" class="second-section-container d-flex flex-row justify-content-center pt-5 pb-5 text-center">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 pt-3">
@@ -72,7 +71,7 @@
             </div>
         </div>
     </div>
-    <div class="third-container-blog d-flex flex-column justify-content-center text-center pt-3">
+    <div id="blogsection" class="third-container-blog d-flex flex-column justify-content-center text-center pt-3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -109,7 +108,7 @@
             </div>
         </div>
     </div>
-    <div class="fourth-service-container d-flex flex-column justify-content-center text-center pt-4 pb-4">
+    <div id="menusection" class="fourth-service-container d-flex flex-column justify-content-center text-center pt-4 pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -321,7 +320,7 @@
         </div>
 
     </div>
-    <div class="fifth-team-container d-flex flex-column justify-content-center text-center pb-4">
+    <div id="teamsection" class="fifth-team-container d-flex flex-column justify-content-center text-center pb-4">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -400,7 +399,7 @@
     </div>
 
 
-    <div class="sixth-reservation-container reservation pt-4">
+    <div id="reservationsection" class="sixth-reservation-container reservation pt-4">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-5 video mt-2 mb-3 d-flex flex-column justify-content-center">
@@ -453,7 +452,7 @@
         </div>
     </div>
 
-    <div class="our-client-container pb-3">
+    <div id="testimonialsection" class="our-client-container pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-12  d-flex flex-column justify-content-center text-center">
@@ -525,7 +524,7 @@
         </div>
 
     </div>
-    <div class="contact-us-container d-flex flex-column justify-content-center text-center pb-3">
+    <div id="contactsection" class="contact-us-container d-flex flex-column justify-content-center text-center pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-12">
